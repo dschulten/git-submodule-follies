@@ -1,8 +1,6 @@
 version: "3.3"
 services:
     gateway:
-        ports:
-            - 8080:8080
         image: openfaas/gateway:0.11.1
         networks:
             - functions
@@ -34,7 +32,11 @@ services:
                 window: 380s
             placement:
                 constraints:
-                    - "node.platform.os == linux"
+                  - 'node.platform.os == linux'
+                  - 'node.labels.stage==${STAGE:-dev}'
+            labels:
+                - traefik.port=8080
+                - traefik.frontend.rule=Host:${BEM_HOST:-bem.kvnurs.intra};PathPrefix:/ui,/system,/function
         secrets:
             - basic-auth-user
             - basic-auth-password
