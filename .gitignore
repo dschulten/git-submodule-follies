@@ -1,0 +1,15 @@
+log/
+target/
+template/
+build/
+!.mvn/wrapper/maven-wrapper.jar
+
+### Temp files ###
+*~
+\#*\#
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
