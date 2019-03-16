@@ -25,9 +25,18 @@ The submodule code is not added automatically, developers need to learn how to p
 
 == Use git subtree
 
-=== Add a submodule
+=== Add a subtree
 
     git subtree add --prefix docker/faas https://github.com/openfaas/faas.git master --squash
+
+=== Commit changes in a subtree
+
+Commit works as if the subtree were my own code. The changes to the subtree are part of the parent project.
+
+=== Switch subtree to a different branch
+
+    git rm -r faas
+    git subtree add --prefix docker/faas https://github.com/openfaas/faas.git 0.12.0 --squash
 
 
 
