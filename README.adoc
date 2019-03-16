@@ -1,3 +1,7 @@
 = Git Submodule Follies
 
 I wonder what happens when I ...
+
+== Make changes in a submodule
+
+I can change files in a submodule, but the parent project does not see them. I have to change into the submodule and commit there.
