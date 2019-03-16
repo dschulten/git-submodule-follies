@@ -16,3 +16,7 @@ Idea allegedly has https://blog.jetbrains.com/idea/2018/09/intellij-idea-2018-3-
     $ git status
 
 from inside the submodule I can see changes I made in the submodule.
+
+== Clone a repo with submodules
+
+Their code is not added automatically, developers need to learn how to pull the code for a submodule.
