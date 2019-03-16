@@ -35,8 +35,12 @@ Commit works as if the subtree were my own code. The changes to the subtree are 
 
 === Switch subtree to a different branch
 
+Not good when there are changes in the subtree. It removes the subtree together with the changes.
+Works best when the latest stable version is master. Also a great argument why master should contain a stable version ;-).
+
     git rm -r faas
     git subtree add --prefix docker/faas https://github.com/openfaas/faas.git 0.12.0 --squash
+    --> and my changes are gone
 
 
 
