@@ -5,3 +5,10 @@ I wonder what happens when I ...
 == Make changes in a submodule
 
 I can change files in a submodule, but the parent project does not see them. I have to change into the submodule and commit there.
+
+== Work with Submodules from Idea
+Idea allegedly has https://blog.jetbrains.com/idea/2018/09/intellij-idea-2018-3-eap-git-submodules-jvm-profiler-macos-and-linux-and-more/[submodule support as of 2018.3 EAP]. However, I do not see submodule diff or history in Idea 2018.3.5. Only when I go into the submodule folder in the terminal and invoke
+
+    $ git status
+
+from inside the submodule I can see changes I made in the submodule.
