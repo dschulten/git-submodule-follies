@@ -1,3 +1,0 @@
-[submodule "docker/faas"]
-	path = docker/faas
-	url = https://github.com/openfaas/faas.git
